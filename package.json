@@ -1,0 +1,28 @@
+{
+  "name": "chat-server",
+  "version": "0.1.0",
+  "description": "A simple Node app built on Express with WebSockets.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "ws": "^8.18.3",
+    "multer": "^2.0.1"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fish-aimf/chat"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "express",
+    "websockets",
+    "chat"
+  ]
+}
