@@ -726,6 +726,11 @@ function handleMessageDeleted(data) {
     }
 }
 
+window.addEventListener('beforeunload', () => {
+    if (ws && ws.readyState === WebSocket.OPEN) {
+        ws.send(JSON.stringify({ type: 'disconnect' }));
+    }
+});
 document.addEventListener("visibilitychange", () => {
     isTabActive = !document.hidden;
     if (ws?.readyState === WebSocket.OPEN) {
