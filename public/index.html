@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communications</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-midnight">
+    <div id="login-screen">
+        <div class="login-container">
+            <h2>Strv K's chat (beta)</h2>
+            <input type="text" id="username-input" placeholder="Enter your name" maxlength="25">
+            <button id="join-btn">Join</button>
+        </div>
+    </div>
+    <div id="chat-screen" hidden>
+        <div class="header">
+            <select id="theme-selector">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="purple">Purple</option>
+                <option value="green">Green</option>
+                <option value="ocean">Ocean</option>
+                <option value="orange">Orange</option>
+                <option value="midnight">Midnight</option>
+                <option value="pastel">Pastel</option>
+                <option value="neon">High Contrast</option>
+                <option value="ugly">Ugly</option>
+                <option value="winter">Winter</option>
+            </select>
+            <button id="notifications-toggle">🔔 Notifications</button>
+        </div>
+        <div class="main-content">
+            <div class="users-panel">
+                <h3>Online Users</h3>
+                <div id="users-list"></div>
+            </div>
+            <div id="chat-windows"></div>
+        </div>
+    </div>
+    <audio id="notification-sound" src="https://500audio.com/sound/multimedia-sound-24-quirk_37956.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
